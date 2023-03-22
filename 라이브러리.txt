@@ -1,6 +1,7 @@
 # 라이브러리 불러오기
 import numpy as np
 import pandas as pd
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -8,3 +9,13 @@ import sklearn
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
+
+from sklearn.linear_model import LinearRegression, Ridge,RidgeCV, Lasso,LassoCV
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+from sklearn.model_selection import train_test_split, KFold, cross_val_score
+from sklearn.feature_selection import f_regression, SelectKBest
+from category_encoders import OneHotEncoder
+
+#차수
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import PolynomialFeatures
